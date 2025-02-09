@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+        
+        max-width: 1440px;   
+        background-color: rgb(248, 248, 248);
+        height: 768px;
+        overflow: hidden;
+        position: fixed;
+        inset: 0px;
+        margin: 0px auto;
+      
+
+}
+.Signin{
+    display: flex;
+    
+}
+.Left{
+    margin: 0 auto;
+    width: 668px;
+    height: 768px;
+    background-color: #F6F6F6;
+    padding: 100px 100px;
+}
+
+.Right{
+    width: 768px;
+    height: 768px; 
+
+}
+.Logo-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color:#393939;
+    margin-left: 20%;
+    
+    
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+}
+.Logo-container h1{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-container{
+    padding: 60px;
+    margin: 40px;
+
+}
+.form-container h1{
+  
+    font-weight: 600;
+    font-size: 60px;
+
+}
+.form-container input{
+    padding:10px 20px;
+    
+}
+.form-container label input{
+    padding: 10px;
+    gap:10px;   
+}
+.form-container button{
+padding: 10px;
+width: 80%;
+color:white;
+background-color:#E9374A;
+border: none
+}
+.remember{
+
+    gap: 10px;
+
+}
+
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+ .Dashboard-container{
+    color:black;
+ } 
+ /* .Sidebar-container{
+    width: 242px;
+    height:900px;
+ }
+
+.sidebar-item {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  
+  /* Style for the active link */
+  .active-link {
+    background-color: #007bff; /* Change to any color for the active item */
+    color: white;
+  }
+  
+  .sidebar-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .dash-elements{
+    
+  } */
+
+
+  /* Sidebar Container */
+/* .sidebar-container {
+    width: 50px;
+    height: 900px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #686868;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  
+   */
+
+ 
+  .sidebar-container h1 {
+    text-align: left;
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .dash-elements ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .dash-elements li {
+    margin-bottom: 15px;
+  }
+  .dash-elements{
+
+    
+  }
+  .dash-elements a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #686868;  
+    font-size: 18px;
+    gap:40px;
+    
+    
+  }
+  .sidebar-container{
+
+   
+        width: 300px; 
+        height: 900px;
+        border: 2px solid silver; 
+        padding: 20px;
+        box-sizing: border-box; 
+        background-color: #F6F6F6;
+        
+        border-radius: none; 
+        margin: 10px; 
+      
+  }
+
+  .active-link {
+    color: #ff000d; 
+    font-weight: bold; 
+  }
+  
+  .dash-elements img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .dash-elements a:hover {
+    color: #ff000d;
+    text-decoration: underline;
+  }
+
+
+  .Searchbar {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+  }
+  
+  .Searchbar input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Adjust for icon space */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .Searchbar .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 19px;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    cursor: pointer;
+  }
+  
+.Dashboard-div{
+  display: flex;
+}
+.Header {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 0 20px; 
+}
+.header-rightNav{
+ display: flex;
+ justify-content: center;  
+}
+
+.inside-rightnav {
+  display: flex;
+  gap: 15px;  
+}
+
+.lpimage{
+  height: 40px;
+}
+
+.inside-rightnav img {
+  width: 24px;  
+  height: 24px;
+  cursor: pointer;
+}
+
+.Admmiraname {
+  font-size: 19px;
+  font-weight: bold;
+ 
+}
+
+
+
+.searchbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+.searchbar input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.Leave-container{
+  display: flex;
+  gap: 10px;
+  
+
+}
+.logout{
+height: 30px;
+}
+.Mainpage{
+  
+}
+.Employee-Container{
+  display: flex;
+
+}
+.Employee-header{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.Attendance-Container{
+  display: flex;
+
+}
+.Attendance-header{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  width: 90%;
+}
