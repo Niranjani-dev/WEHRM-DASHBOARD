@@ -5,6 +5,8 @@ import Sidebar from './Sidebar'
 import Navbar from './Navbar'
 import Mainsection from './Mainsection'
 
+ 
+
 const Dashboard = () => {
   return (
     <div className='Dashboard-container'>
@@ -17,6 +19,7 @@ const Dashboard = () => {
       </div>
       <div className='Mainpage'>
       <Mainsection />
+     
       </div>
      
       </div>

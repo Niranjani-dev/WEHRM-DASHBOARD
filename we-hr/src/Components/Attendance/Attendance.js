@@ -1,18 +1,20 @@
 import React from 'react'
-import Sidebar from '../Components/Dashboard/Sidebar'
-import Navbar from '../Components/Dashboard/Navbar'
-import Searchbar from '../Components/Dashboard/Searchbar'
+import Sidebar from '../Dashboard/Sidebar'
+import Navbar from '../Dashboard/Navbar'
+import Searchbar from '../Dashboard/Searchbar'
+import AttendancePage from './AttendancePage'
 
 function Attendance() {
   return (
     <div className='Attendance-Container'>
       
-     <Sidebar/>
+      <Sidebar/>
      <div className='Attendance-header'>
       <Searchbar />
       <Navbar/>
-      </div>
 
+      </div>
+    <AttendancePage/>
     </div>
   )
 }

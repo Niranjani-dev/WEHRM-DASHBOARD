@@ -12,16 +12,13 @@ body{
         max-width: 1440px;   
         background-color: rgb(248, 248, 248);
         height: 768px;
-        overflow: hidden;
-        position: fixed;
+        position: relative;
         inset: 0px;
         margin: 0px auto;
       
-
 }
 .Signin{
     display: flex;
-    
 }
 .Left{
     margin: 0 auto;
@@ -30,11 +27,9 @@ body{
     background-color: #F6F6F6;
     padding: 100px 100px;
 }
-
 .Right{
     width: 768px;
     height: 768px; 
-
 }
 .Logo-container{
     display: flex;
@@ -42,8 +37,6 @@ body{
     gap: 40px;
     color:#393939;
     margin-left: 20%;
-    
-    
 }
 .logo img{
     height: 60px;
@@ -67,25 +60,33 @@ body{
 }
 .form-container input{
     padding:10px 20px;
+    width: 100%;
     
 }
 .form-container label input{
     padding: 10px;
+    
     gap:10px;   
 }
 .form-container button{
 padding: 10px;
-width: 80%;
+width: 100%;
 color:white;
 background-color:#E9374A;
 border: none
 }
 .remember{
 
-    gap: 10px;
+    
 
 }
 
+.checkbox{
+  display: flex;
+  gap:10px;
+  align-items: center;
+  
+}
 .error-text {
     color: red;
     font-size: 14px;
@@ -94,20 +95,11 @@ border: none
  .Dashboard-container{
     color:black;
  } 
- /* .Sidebar-container{
-    width: 242px;
-    height:900px;
- }
 
-.sidebar-item {
-    cursor: pointer;
-    padding: 10px;
-    margin: 5px 0;
-  }
   
-  /* Style for the active link */
+  
   .active-link {
-    background-color: #007bff; /* Change to any color for the active item */
+    background-color: #007bff; 
     color: white;
   }
   
@@ -116,27 +108,16 @@ border: none
     height: 20px;
     margin-right: 10px;
   }
-  .dash-elements{
-    
-  } */
 
 
-  /* Sidebar Container */
-/* .sidebar-container {
-    width: 50px;
-    height: 900px;
-    background-color: #f4f4f4;
-    border-right: 1px solid #686868;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
+.sidebar-title-only{
+padding: 10px;
+bottom:30px;
   
-   */
-
- 
+}
+ .radio-btn{
+  gap: 10px;
+ }
   .sidebar-container h1 {
     text-align: left;
     font-size: 50px;
@@ -165,13 +146,16 @@ border: none
     
     
   }
+  .BirthdayHeading{
+    padding: 30px;
+  }
   .sidebar-container{
 
    
         width: 300px; 
-        height: 900px;
-        border: 2px solid silver; 
+        height: 850px;
         padding: 20px;
+        padding-bottom:30px;
         box-sizing: border-box; 
         background-color: #F6F6F6;
         
@@ -197,32 +181,50 @@ border: none
   }
 
 
-  .Searchbar {
+  .searchbar {
     position: relative;
-    width: 300px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensures everything aligns horizontally */
+    gap: 10px; /* Adds space between elements */
+    width: 100%; /* Optional: Adjust based on your layout */
   }
   
-  .Searchbar input {
+  .search-container {
+    position: relative;
+    flex: 1;
+  }
+  
+  .search-container input {
     width: 100%;
-    padding: 10px 40px 10px 10px; /* Adjust for icon space */
+    padding: 8px 35px 8px 10px; /* Right padding for search icon */
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
   }
   
-  .Searchbar .search-icon {
-    position: absolute;
+  .search-icon {
+    position: relative;
     right: 10px;
-    top: 19px;
+    top: 50%;
     transform: translateY(-50%);
-    width: 20px; /* Adjust as needed */
-    height: 20px; /* Adjust as needed */
-    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    pointer-events: none; /* Prevents interaction issues */
   }
   
-.Dashboard-div{
+  .Hamburger-Menu{
+    margin-left: -1px;
+    display: flex;
+    align-items: center;
+    gap:20px; 
+    display: none;
+  }
+
+  .Dashboard-div{
   display: flex;
-}
+   }
+   
 .Header {
   margin: 20px;
   display: flex;
@@ -237,7 +239,7 @@ border: none
 
 .inside-rightnav {
   display: flex;
-  gap: 15px;  
+  gap: 33px;  
 }
 
 .lpimage{
@@ -261,7 +263,7 @@ border: none
 .searchbar {
   position: relative;
   display: flex;
-  align-items: center;
+ flex-direction: row;
   width: 250px;
 }
 
@@ -284,23 +286,48 @@ border: none
 
 .Leave-container{
   display: flex;
-  gap: 10px;
-  
+  gap: 10px;  
 
 }
 .logout{
 height: 30px;
 }
 .Mainpage{
-  
+position: absolute;  
+display: flex;
+flex-direction: c;
+top:15%;
+left:22%;
 }
+.Mainsection{
+display: flex;
+}
+.GraphAnnounce{
+  margin: 1rem;
+  position: absolute;
+  top: 100%;
+  left: -3%;
+  display: flex;
+  gap: 15px;
+
+}
+.Graph-1{
+  flex-direction: row;
+  gap: 20%;
+}
+.Announcement{
+  position: absolute;
+  top: 100%;
+
+}
+
 .Employee-Container{
   display: flex;
 
 }
 .Employee-header{
   display: flex;
-  padding: 10px;
+  margin:20px;
   justify-content: space-between;
   width: 90%;
 }
@@ -314,4 +341,244 @@ height: 30px;
   padding: 10px;
   justify-content: space-between;
   width: 90%;
+}
+.AttendanceImages{
+  margin: 20px;
+  position: absolute;
+  left: 19%;
+  top:10%;
+ 
+}
+.Inside-attend{
+  display: flex;
+  align-items: center;
+
+ margin: 30px;
+}
+.Leaverequest{
+display: flex;
+  padding: 10px;
+  gap: 40px;
+  cursor: pointer;
+ 
+}
+.Attendences img{
+ height: 230px;
+}
+
+
+.Employee-div{
+display: flex;
+position: absolute;
+/* align-items: center; */
+flex-direction: column;
+top: 20%;
+}
+.Empicon{
+  width: 600px;
+  height: 400px;
+  cursor :pointer;
+}
+.Grouicon{
+  width: 400px;
+  height: 300px;
+}
+.Employee-img{
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+
+  .Calendar {
+    position: absolute;
+    top: -97%;
+    left: 109%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1033px){
+
+
+}
+
+@media screen and (max-width: 1024px) {
+  .Signin {
+      flex-direction: column; 
+      align-items: center;
+  }
+  
+  .Left, .Right {
+      width: 100%;
+      height: auto;
+      padding: 50px 20px;
+  }
+
+  .Logo-container {
+      margin-left: 0;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .form-container {
+      padding: 20px;
+      margin: 20px;
+  }
+
+  .form-container h1 {
+      font-size: 40px; 
+  }
+
+  .searchbar {
+      width: 100%; 
+  }
+
+  .sidebar-container {
+      width: 50%;
+      height: auto;
+      padding: 10px;
+  }
+
+  .dash-elements a {
+      font-size: 16px;
+      gap: 10px;
+  }
+
+  .Employee-div, .Attendance-Container {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: auto;
+  }
+
+  .GraphAnnounce {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: auto;
+      left: auto;
+  }
+
+  .Graph-1 {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Hamburger-Menu {
+      display: flex;
+  }
+  .Leave-container{
+    flex-direction: column;
+    position: relative;
+   }
+  .Header {
+      flex-direction: column;
+      
+      align-items: center;
+      width: 100%;
+  }
+
+  /* .inside-rightnav {
+      gap: 15px;
+  } */
+
+  .Employee-div, .Attendance-Container {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .Mainpage {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: auto;
+      left: auto;
+  }
+
+  .Empicon, .Grouicon {
+      width: 100%;
+      height: auto;
+  }
+
+  .Calendar {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: 100%;
+  }
+
+  .searchbar {
+      width: 100%;
+  }
+
+  .logout {
+      height: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Logo-container h1 {
+      font-size: 18px;
+  }
+
+  .form-container h1 {
+      font-size: 30px;
+  }
+
+  .searchbar input {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .Empicon, .Grouicon {
+      width: 100%;
+  }
+
+  .dash-elements a {
+      font-size: 14px;
+      gap: 5px;
+  }
+
+  .Attendance-header, .Employee-header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .Mainpage, .GraphAnnounce {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .Employee-img {
+      width: 100%;
+  }
+
+  .Graph-1 {
+      width: 100%;
+  }
+
+  .sidebar-container {
+      padding: 10px;
+  }
 }

@@ -40,13 +40,16 @@ export const sidebarImage = [
     Image: Task,  
     link: '../Assets/Task.png', 
   },
-
+ 
   {
     title: 'Announcement',
     Image: Announcement,  
     link: '../Assets/Announcement.png', 
   },
 
+  {
+    title: 'Others',
+  },
 
   {
     title: 'Support',

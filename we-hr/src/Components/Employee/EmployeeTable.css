@@ -1,0 +1,107 @@
+.employee-container {
+    width: 90%;    
+    margin: auto;
+    font-family:'poppins';
+    position: absolute;
+    top:10%;
+    left: 21%;
+    padding: 20px ;
+   
+
+  }
+  .EmployeeTable-header{
+    display: flex;
+    justify-content: space-between;
+    margin:2rem;
+    left:20%;
+    width: 100%;
+  }
+ .Employee-container{
+   display: flex;
+  
+ }
+ .Addbtn{
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+ }
+  .Employee-header{
+   
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .top-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .import-button, .add-button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+ 
+  .search-bar {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+  }
+  
+  .employee-table th, .employee-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .email {
+    color: gray;
+    font-size: 12px;
+    display: block;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    min-width: 160px;
+  }
+  
+  .dropdown-content p {
+    padding: 8px;
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  .dropdown-content p:hover {
+    background: #f1f1f1;
+  }
+ 

@@ -1,99 +1,3 @@
-// import React from 'react';
-// import Logo from '../Assets/Logo.png';
-// import './signin.css';
-// import { Link } from 'react-router-dom';
-
-// const Left = () => {
-//   return (
-//     <div className='Left'>
-//       <div className='Logo-container'>
-//         <img src={Logo} alt="Company Logo" className='logo' />
-//         <h1>Your Logo</h1>
-//       </div>
-
-//       <div className='form-container'>
-//         <h1>Sign into</h1>
-//         <h2>Your Account</h2>
-
-//         <div className='Input-container'>
-//           <input type='text' placeholder='Company ID' /><br /><br />
-//           <input type='password' placeholder='Password' /><br /><br />
-
-//           <label>
-//             <input type="checkbox" /> Remember Me
-//           </label>
-//           <br /><br />
-
-//           <Link to='/dashboard'> <button>Sign in</button> </Link>
-           
-         
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Left;
-
-
-// import React, { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import Logo from '../Assets/Logo.png';
-// import './signin.css';
-
-// const Left = () => {
-//   const navigate = useNavigate();
-//   const [companyId, setCompanyId] = useState('');
-//   const [password, setPassword] = useState('');
-
-//   const handleSignIn = () => {
-
-//     if (companyId && password) {
-//       navigate('/dashboard'); 
-//     } else {
-//       alert('Please enter valid credentials');
-//     }
-//   };
-
-//   return (
-//     <div className='Left'>
-//       <div className='Logo-container'>
-//         <img src={Logo} alt="Company Logo" className='logo' />
-//         <h1>Your Logo</h1>
-//       </div>
-
-//       <div className='form-container'>
-//         <h1>Sign into</h1>
-//         <h2>Your Account</h2>
-
-//         <div className='Input-container'>
-//           <input 
-//             type='text' 
-//             placeholder='Company ID' 
-//             value={companyId} 
-//             onChange={(e) => setCompanyId(e.target.value)} 
-//           /><br /><br />
-          
-//           <input 
-//             type='password' 
-//             placeholder='Password' 
-//             value={password} 
-//             onChange={(e) => setPassword(e.target.value)} 
-//           /><br /><br />
-
-//           <label>
-//             <input type="checkbox" /> Remember Me
-//           </label>
-//           <br /><br />
-
-//           <button onClick={handleSignIn}>Sign in</button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Left;
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../Assets/Logo.png';
@@ -189,9 +93,12 @@ const Left = () => {
 
           <br /><br />
          
-          {/* Remember Me Checkbox */} <label>
-            <input type="checkbox" /> Remember Me
-          </label>
+          {/* Remember Me Checkbox */} 
+          {/* <label><input type="checkbox" /> Remember Me </label> */}
+          <div className='checkbox' >
+         <div><input  type='checkbox'/></div>
+         <div><lable>Remember Me</lable></div>
+         </div>
           <br /><br />
 
           {/* Submit Button */}
