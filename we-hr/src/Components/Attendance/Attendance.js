@@ -10,6 +10,8 @@ function Attendance() {
       
       <Sidebar/>
      <div className='Attendance-header'>
+    Hi
+    
       <Searchbar />
       <Navbar/>
 
